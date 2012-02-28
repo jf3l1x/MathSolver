@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Segoe UI" Size="9" />
+  <Class Name="IntCalc.Lib.States.BaseState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\BaseState.cs</FileName>
+      <HashCode>AgAAAAAgAAAAAAAgAgAAAAAEAAAFAQAAEAAACCgAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.States.Transition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\Transition.cs</FileName>
+      <HashCode>AAAAAgAAAJAAAAAAAAAAAAAAAAQAAAAgAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.States.RegexFactory" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\RegexFactory.cs</FileName>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.States.CoeficientOrSimpleExpressionState" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\CoeficientOrSimpleExpressionState.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAAAgAAAAAAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.States.InvalidState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\InvalidState.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAgAgAAAAAAAAAFAAAAQAAACAAAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="IntCalc.Lib.States.IState" Collapsed="true">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\IState.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAgAgAAAAAAAAAFAAAAAAAACAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IntCalc.Lib.States.ITransition" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>States\ITransition.cs</FileName>
+      <HashCode>AAAAAgAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

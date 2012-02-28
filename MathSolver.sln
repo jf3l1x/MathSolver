@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSolver.Demo", "MathSolver.Demo\MathSolver.Demo.csproj", "{368C5F5B-DDF7-4904-84CB-CCBCD3D09EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSolver", "MathSolver\MathSolver.csproj", "{46F29D07-91CA-41BB-8FDE-CBD3A9BC4581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSolver.Tests", "MathSolver.Tests\MathSolver.Tests.csproj", "{6CFCF1A0-F1D3-46E8-BAB1-6365888E2A59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{368C5F5B-DDF7-4904-84CB-CCBCD3D09EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368C5F5B-DDF7-4904-84CB-CCBCD3D09EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368C5F5B-DDF7-4904-84CB-CCBCD3D09EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368C5F5B-DDF7-4904-84CB-CCBCD3D09EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F29D07-91CA-41BB-8FDE-CBD3A9BC4581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F29D07-91CA-41BB-8FDE-CBD3A9BC4581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F29D07-91CA-41BB-8FDE-CBD3A9BC4581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F29D07-91CA-41BB-8FDE-CBD3A9BC4581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFCF1A0-F1D3-46E8-BAB1-6365888E2A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFCF1A0-F1D3-46E8-BAB1-6365888E2A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFCF1A0-F1D3-46E8-BAB1-6365888E2A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFCF1A0-F1D3-46E8-BAB1-6365888E2A59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

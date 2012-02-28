@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Segoe UI" Size="9" />
+  <Class Name="IntCalc.Lib.ComplexExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComplexExpression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAoAAAACAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.ContainedExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ContainedExpression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAgAAAIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.389" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.SimpleExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SimpleExpression.cs</FileName>
+      <HashCode>AAAAIgAAAAkAAAAAAAAAAAAAAAAAABAAEAwAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.231" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.FunctionExpression">
+    <Position X="9.75" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <FileName>Functions\FunctionExpression.cs</FileName>
+      <HashCode>AAAACgAAAAAEABAAAAAAAAACAAAAAAAAgIgAgIAAACA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Cos" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Cos.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.E" Collapsed="true">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\E.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Log" Collapsed="true">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Log.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Pi" Collapsed="true">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Pi.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Pow" Collapsed="true">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Pow.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Product" Collapsed="true">
+    <Position X="20.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Product.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Root" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Root.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Sen" Collapsed="true">
+    <Position X="18" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Sen.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Sum" Collapsed="true">
+    <Position X="20.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Sum.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.Functions.Tan" Collapsed="true">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Functions\Tan.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntCalc.Lib.NullExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>NullExpression.cs</FileName>
+      <HashCode>AAAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IntCalc.Lib.EnclosedExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EnclosedExpression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="IntCalc.Lib.IExpression" Collapsed="true">
+    <Position X="22.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IExpression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="IntCalc.Lib.Sign" Collapsed="true">
+    <Position X="22.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SimpleExpression.cs</FileName>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>
