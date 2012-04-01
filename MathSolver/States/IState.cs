@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MathSolver.Functions;
 
 namespace MathSolver.States
 {
@@ -10,5 +11,6 @@ namespace MathSolver.States
         IState Process(char c);
         void Enter(IState from, char c);
         IExpression CreateExpression();
+        IFunctionFactory FunctionFactory { get; set; }
     }
 }

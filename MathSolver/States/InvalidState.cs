@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MathSolver.Functions;
 
 namespace MathSolver.States
 {
@@ -40,6 +41,12 @@ namespace MathSolver.States
         public IExpression CreateExpression()
         {
             throw new NotImplementedException();
+        }
+
+        public IFunctionFactory FunctionFactory
+        {
+            get { return new FunctionFactory();}
+            set {  }
         }
 
         public IList<ITransition> Transitions

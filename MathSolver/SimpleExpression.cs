@@ -1,4 +1,6 @@
 using System;
+using System.Globalization;
+using System.Text;
 
 namespace MathSolver
 {
@@ -47,10 +49,20 @@ namespace MathSolver
         {
             if (_sign == Sign.Positive)
                 return _coeficient*Math.Pow(variableValue.Resolve(Variable), _exponent);
-            else
-                return _coeficient * Math.Pow(variableValue.Resolve(Variable), _exponent) * -1;
+            return _coeficient * Math.Pow(variableValue.Resolve(Variable), _exponent) * -1;
         }
-
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            if (_sign == Sign.Negative)
+            {
+                sb.Append("-");
+            }
+            sb.Append(_coeficient);
+            sb.Append(_variable);
+            sb.Append(_exponent);
+            return sb.ToString();
+        }
         #endregion
     }
 }

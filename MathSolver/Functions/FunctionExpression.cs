@@ -3,27 +3,20 @@ using System.Collections.Generic;
 
 namespace MathSolver.Functions
 {
-    public abstract class FunctionExpression : IExpression
+    public abstract class FunctionExpression : IFunctionExpression
     {
-        private readonly int _maxParameters;
-        private readonly int _minParameters;
-
+      
         private readonly List<IExpression> _parameters;
-        private Sign _sign;
 
         public FunctionExpression(int minimumParameters, int maximumParameters)
         {
-            _sign = Sign.Positive;
-            _minParameters = minimumParameters;
-            _maxParameters = maximumParameters;
+            Sign = Sign.Positive;
+            MinParameters = minimumParameters;
+            MaxParameters = maximumParameters;
             _parameters = new List<IExpression>();
         }
 
-        public Sign Sign
-        {
-            get { return _sign; }
-            set { _sign = value; }
-        }
+        public Sign Sign { get; set; }
 
         protected List<IExpression> Parameters
         {
@@ -40,7 +33,7 @@ namespace MathSolver.Functions
         {
             foreach (IExpression e in parameters)
             {
-                if (_parameters.Count == _maxParameters)
+                if (_parameters.Count == MaxParameters)
                     throw new InvalidOperationException();
                 _parameters.Add(e);
             }
@@ -53,9 +46,9 @@ namespace MathSolver.Functions
 
         protected virtual void ValidateParameters()
         {
-            if (Parameters.Count < _minParameters)
+            if (Parameters.Count < MinParameters)
                 throw new InvalidOperationException();
-            if (Parameters.Count > _maxParameters)
+            if (Parameters.Count > MaxParameters)
                 throw new InvalidOperationException();
         }
 
@@ -65,5 +58,8 @@ namespace MathSolver.Functions
                 return value*-1;
             return value;
         }
+
+        public int MinParameters { get; set; }
+        public int MaxParameters { get; set; }
     }
 }

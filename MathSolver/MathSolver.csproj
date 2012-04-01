@@ -60,9 +60,13 @@
   <ItemGroup>
     <Compile Include="ConstantResolver.cs" />
     <Compile Include="EnclosedExpression.cs" />
+    <Compile Include="Functions\ChainedFunctionFactory.cs" />
     <Compile Include="Functions\Cos.cs" />
     <Compile Include="Functions\E.cs" />
     <Compile Include="Functions\FunctionExpression.cs" />
+    <Compile Include="Functions\FunctionFactory.cs" />
+    <Compile Include="Functions\IFunctionExpression.cs" />
+    <Compile Include="Functions\IFunctionFactory.cs" />
     <Compile Include="Functions\Log.cs" />
     <Compile Include="Functions\Pi.cs" />
     <Compile Include="Functions\Pow.cs" />

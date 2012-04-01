@@ -17,10 +17,11 @@ namespace MathSolver.Functions
             ValidateParameters();
             double min = (int)GetParameterValue(1, resolver);
             double max = (int)GetParameterValue(2, resolver);
-            double retval = GetParameterValue(0, resolver);
+            double retval = GetParameterValue(0, new ConstantResolver(min));
             for (double i = min + 1; i <= max; i++)
             {
-                retval = Calc(retval, GetParameterValue(0, resolver));
+
+                retval = Calc(retval, GetParameterValue(0,new ConstantResolver(i)));
             }
             return AddSign(retval);
         }

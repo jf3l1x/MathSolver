@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using MathSolver.Functions;
 
 namespace MathSolver.States
 {
@@ -13,10 +14,13 @@ namespace MathSolver.States
 
         public BaseState()
         {
+            FunctionFactory=new FunctionFactory();
             _transitions = new List<ITransition>();
             Transitions.Add(new Transition(@"\s", this));
             _buffer = new StringBuilder();
         }
+
+        public IFunctionFactory FunctionFactory { get; set; }
 
         protected IState From
         {
@@ -40,7 +44,7 @@ namespace MathSolver.States
         public virtual IState Process(char c)
         {
             IState retval = GetNextState(c);
-
+            retval.FunctionFactory = FunctionFactory;
             retval.Enter(this, c);
             return retval;
         }
