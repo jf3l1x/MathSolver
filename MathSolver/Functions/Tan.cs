@@ -14,5 +14,9 @@ namespace MathSolver.Functions
             ValidateParameters();
             return AddSign(Math.Tan(GetParameterValue(0, resolver)));
         }
+        public override string Name
+        {
+            get { return "Tan"; }
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace MathSolver.States
         protected override void CreateTransitions()
         {
             Transitions.Add(new Transition(@"[0-9\.]", this));
-            Transitions.Add(new Transition(@"[+\-/*]", new ComplexExpressionState()));
+            Transitions.Add(new Transition(@"[\!\+\-/*\|&\<\>\=]", new OperatorEnteringState(){ FunctionFactory = FunctionFactory }));
         }
 
         protected override void SetExpressionData(SimpleExpression expression)

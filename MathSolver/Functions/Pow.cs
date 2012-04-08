@@ -14,5 +14,9 @@ namespace MathSolver.Functions
             ValidateParameters();
             return AddSign(Math.Pow(GetParameterValue(0, resolver), GetParameterValue(1, resolver)));
         }
+        public override string Name
+        {
+            get { return "Pow"; }
+        }
     }
 }

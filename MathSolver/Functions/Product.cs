@@ -6,5 +6,9 @@ namespace MathSolver.Functions
         {
             return left*right;
         }
+        public override string Name
+        {
+            get { return "Product"; }
+        }
     }
 }

@@ -19,5 +19,9 @@ namespace MathSolver.Functions
                 return AddSign(Math.Pow(GetParameterValue(0, resolver), 1/GetParameterValue(1, resolver)));
             }
         }
+        public override string Name
+        {
+            get { return "Root"; }
+        }
     }
 }

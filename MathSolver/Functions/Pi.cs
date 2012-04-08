@@ -13,5 +13,9 @@ namespace MathSolver.Functions
         {
             return AddSign(Math.PI);
         }
+        public override string Name
+        {
+            get { return "Pi"; }
+        }
     }
 }

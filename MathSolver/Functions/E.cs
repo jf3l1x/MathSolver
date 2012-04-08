@@ -13,5 +13,9 @@ namespace MathSolver.Functions
         {
             return AddSign(Math.E);
         }
+        public override string Name
+        {
+            get { return "E"; }
+        }
     }
 }

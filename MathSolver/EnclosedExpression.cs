@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace MathSolver
 {
     public class EnclosedExpression : IExpression
@@ -23,7 +25,15 @@ namespace MathSolver
                     _expression = value;
             }
         }
-
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append(_sign == Sign.Negative ? "-": string.Empty);
+            sb.Append("(");
+            sb.Append(_expression.ToString());
+            sb.Append(")");
+            return sb.ToString();
+        }
         #region IExpression Members
 
         public double Calc(IVariableResolver resolver)

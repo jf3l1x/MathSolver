@@ -23,7 +23,7 @@ namespace MathSolver.States
                 if (ContainedState.GetType() != typeof (InitialState))
                     return InvalidState.Instance;
             }
-            return new FunctionEnteredState(_expression);
+            return new FunctionEnteredState(_expression){FunctionFactory = FunctionFactory};
         }
 
         public override IState Process(char c)
@@ -37,7 +37,7 @@ namespace MathSolver.States
                 if (ContainedState.IsFinalState)
                 {
                     _expression.AddParameter(ContainedState.CreateExpression());
-                    ContainedState = new InitialState();
+                    ContainedState = new InitialState(){FunctionFactory = FunctionFactory};
                     Append(c.ToString());
                     return this;
                 }

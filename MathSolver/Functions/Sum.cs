@@ -25,5 +25,9 @@ namespace MathSolver.Functions
             }
             return AddSign(retval);
         }
+        public override string Name
+        {
+            get { return "Sum"; }
+        }
     }
 }

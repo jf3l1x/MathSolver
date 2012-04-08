@@ -48,7 +48,46 @@ namespace MathSolver.Tests
                               p.Parse("(Produto(Soma(x2+3x,0,10),1,2) * x4 + 3x ) / Sen(Raiz(2x)) + 5x"));
             Assert.IsNotNull(p.Parse("(Produto(Soma(x2+3x,0,10),1,2) * x4 + 3x ) / Sen(Raiz(2x)) + 5x"));
         }
-
+        [Test]
+        public void Equals()
+        {
+            Assert.IsNotNull(p.Parse("x2==x2"));
+        }
+        [Test]
+        public void NotEquals()
+        {
+            Assert.IsNotNull(p.Parse("x2!=x2"));
+        }
+        [Test]
+        public void Greater()
+        {
+            Assert.IsNotNull(p.Parse("x2>x2"));
+        }
+        [Test]
+        public void GreaterOrEqual()
+        {
+            Assert.IsNotNull(p.Parse("x2>=x2"));
+        }
+        [Test]
+        public void Lesser()
+        {
+            Assert.IsNotNull(p.Parse("x2<x2"));
+        }
+        [Test]
+        public void LesserOrEqual()
+        {
+            Assert.IsNotNull(p.Parse("x2<=x2"));
+        }
+        [Test]
+        public void And()
+        {
+            Assert.IsNotNull(p.Parse("x2&&x2"));
+        }
+        [Test]
+        public void Or()
+        {
+            Assert.IsNotNull(p.Parse("x2||x2"));
+        }
         [Test]
         public void Cos()
         {
@@ -189,6 +228,16 @@ namespace MathSolver.Tests
         public void Tan()
         {
             Assert.AreEqual(Math.Tan(45), p.Parse("Tg(45)").Calc(new ConstantResolver(1)));
+        }
+        [Test]
+        public void ReconstructString()
+        {
+            var formula = "(Log(Log(2,Pi()),E()) + Soma(x2+2x+3,1,10)) && (x>10)";
+            var expression = p.Parse(formula);
+            Assert.IsNotNull(expression);
+            Assert.IsTrue(!string.IsNullOrEmpty(expression.ToString()));
+            Console.WriteLine(formula);
+            Console.WriteLine(expression.ToString());
         }
     }
 }

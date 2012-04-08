@@ -6,7 +6,7 @@ namespace MathSolver.States
 
         public EnclosedExpressionEnteredState()
         {
-            Transitions.Add(new Transition(@"[+\-/*]", new ComplexExpressionState()));
+            Transitions.Add(new Transition(@"[\!\+\-/*\|&\<\>\=]", new OperatorEnteringState() { FunctionFactory = FunctionFactory }));
             _expression = NullExpression.Instance;
         }
 

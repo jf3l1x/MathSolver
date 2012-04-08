@@ -18,8 +18,8 @@ namespace MathSolver.States
         protected virtual void CreateTransitions()
         {
             Transitions.Add(new Transition("[A-Z]", this));
-            Transitions.Add(new Transition(@"[0-9\.]", new SimpleExpressionVariableEnteredState()));
-            Transitions.Add(new Transition(@"[+\-/*]", new ComplexExpressionState()));
+            Transitions.Add(new Transition(@"[0-9\.]", new SimpleExpressionVariableEnteredState(){FunctionFactory = FunctionFactory}));
+            Transitions.Add(new Transition(@"[\!\+\-/*\|&\<\>\=]", new OperatorEnteringState() { FunctionFactory = FunctionFactory }));
         }
 
         public override void Enter(IState from, char c)

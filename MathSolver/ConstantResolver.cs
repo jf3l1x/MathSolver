@@ -16,6 +16,16 @@
             return _value;
         }
 
+        public void SetCachedValue(string key, double value)
+        {
+            
+        }
+
+        public double? GetCachedValue(string key)
+        {
+            return 1;
+        }
+
         #endregion
     }
 }

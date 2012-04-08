@@ -10,7 +10,7 @@ namespace MathSolver.States
             get
             {
                 if (_containedState == null)
-                    _containedState = new InitialState();
+                    _containedState = new InitialState(){FunctionFactory = FunctionFactory};
                 return _containedState;
             }
             set { _containedState = value; }

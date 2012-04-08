@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace MathSolver.Functions
 {
@@ -16,6 +17,7 @@ namespace MathSolver.Functions
             _parameters = new List<IExpression>();
         }
 
+        public abstract string Name { get; }
         public Sign Sign { get; set; }
 
         protected List<IExpression> Parameters
@@ -61,5 +63,23 @@ namespace MathSolver.Functions
 
         public int MinParameters { get; set; }
         public int MaxParameters { get; set; }
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append(Sign == Sign.Negative ? "-": string.Empty);
+            sb.Append(Name);
+            sb.Append("(");
+            foreach (var expression in Parameters)
+            {
+                sb.Append(expression.ToString());
+                sb.Append(",");
+            }
+            if (Parameters.Count>0)
+            {
+                sb.Remove(sb.Length-1, 1);
+            }
+            sb.Append(")");
+            return sb.ToString();
+        }
     }
 }

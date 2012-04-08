@@ -58,9 +58,21 @@ namespace MathSolver
             {
                 sb.Append("-");
             }
-            sb.Append(_coeficient);
-            sb.Append(_variable);
-            sb.Append(_exponent);
+            if (_coeficient>1 || _exponent==0)
+            {
+                sb.Append(_coeficient);    
+            }
+            
+            if (_exponent!=0)
+            {
+                sb.Append(_variable);
+                if (_exponent>1)
+                {
+                    sb.Append(_exponent);        
+                }
+                
+            }
+            
             return sb.ToString();
         }
         #endregion

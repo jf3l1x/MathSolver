@@ -14,5 +14,9 @@ namespace MathSolver.Functions
             ValidateParameters();
             return AddSign(Math.Sin(GetParameterValue(0, resolver)));
         }
+        public override string Name
+        {
+            get { return "Sen"; }
+        }
     }
 }

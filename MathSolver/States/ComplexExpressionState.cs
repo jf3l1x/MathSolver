@@ -5,40 +5,16 @@ namespace MathSolver.States
         private IExpression _leftSideExpression;
         private Operators _operator;
 
-        public ComplexExpressionState()
+        public ComplexExpressionState(IExpression leftSideExpression,Operators op)
         {
-            _leftSideExpression = NullExpression.Instance;
-            _operator = Operators.Sum;
-            Transitions.Add(new Transition(@"[A-Z0-9\.,+\-/*()]", this));
+            _leftSideExpression = leftSideExpression;
+            _operator = op;
+            Transitions.Add(new Transition(@"[A-Z0-9\.,\+\-/*\|&\>\<\!\=\(\)]", this));
         }
-
+        
         public override void Enter(IState from, char c)
         {
-            if (from != this)
-            {
-                switch (c)
-                {
-                    case '+':
-                        _operator = Operators.Sum;
-                        break;
-                    case '-':
-                        _operator = Operators.Subtract;
-                        break;
-                    case '/':
-                        _operator = Operators.Divide;
-                        break;
-                    case '*':
-                        _operator = Operators.Multiply;
-                        break;
-                    
-                }
-                if (from.IsFinalState)
-                    _leftSideExpression = from.CreateExpression();
-            }
-            else
-            {
-                ContainedState = ContainedState.Process(c);
-            }
+            ContainedState = ContainedState.Process(c);
             base.Enter(from, c);
         }
 

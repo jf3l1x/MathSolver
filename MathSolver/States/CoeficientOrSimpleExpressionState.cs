@@ -7,8 +7,8 @@ namespace MathSolver.States
         public CoeficientOrSimpleExpressionState()
         {
             Transitions.Add(new Transition(@"[0-9\.]", this));
-            Transitions.Add(new Transition("[A-Z]", new SimpleExpressionCoeficientEnteredState()));
-            Transitions.Add(new Transition(@"[+\-/*]", new ComplexExpressionState()));
+            Transitions.Add(new Transition("[A-Z]", new SimpleExpressionCoeficientEnteredState(){FunctionFactory = FunctionFactory}));
+            Transitions.Add(new Transition(@"[\!\+\-/*\|&\<\>\=]", new OperatorEnteringState(){FunctionFactory = FunctionFactory}));
         }
 
         public double Coeficient

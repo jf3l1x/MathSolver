@@ -8,7 +8,7 @@ namespace MathSolver.States
 
         public EnclosedExpressionEnteringState()
         {
-            Transitions.Add(new Transition(@"[A-Z0-9,\.\+\-/*\(]", this));
+            Transitions.Add(new Transition(@"[A-Z0-9,\.\!\+\-/*\|&\<\>\=\(]", this));
         }
 
         public override bool IsFinalState
@@ -20,7 +20,7 @@ namespace MathSolver.States
         {
             if (ContainedState.IsFinalState)
                 return
-                    new EnclosedExpressionEnteredState(new EnclosedExpression(Sign, ContainedState.CreateExpression()));
+                    new EnclosedExpressionEnteredState(new EnclosedExpression(Sign, ContainedState.CreateExpression())){FunctionFactory = FunctionFactory};
             return InvalidState.Instance;
         }
 

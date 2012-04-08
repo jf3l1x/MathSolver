@@ -4,9 +4,9 @@ namespace MathSolver.States
     {
         public SignEnteredState()
         {
-            Transitions.Add(new Transition(@"\(", new EnclosedExpressionEnteringState()));
-            Transitions.Add(new Transition(@"[0-9\.]", new CoeficientOrSimpleExpressionState()));
-            Transitions.Add(new Transition("[A-Z]", new FunctionOrVariableEnteringState()));
+            Transitions.Add(new Transition(@"\(", new EnclosedExpressionEnteringState(){FunctionFactory = FunctionFactory}));
+            Transitions.Add(new Transition(@"[0-9\.]", new CoeficientOrSimpleExpressionState(){FunctionFactory = FunctionFactory}));
+            Transitions.Add(new Transition("[A-Z]", new FunctionOrVariableEnteringState(){FunctionFactory = FunctionFactory}));
         }
 
         public Sign Sign
