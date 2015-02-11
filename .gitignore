@@ -40,3 +40,8 @@ build/
 *.jtconfig
 *.dotCover
 *.user
+/packages/NUnit.2.6.4
+
+/packages
+
+/MathSolver.sln.DotSettings
