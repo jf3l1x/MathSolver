@@ -1,3 +1,4 @@
+<img src="https://travis-ci.org/jf3l1x/MathSolver.svg" data-bindattr-824="824" title="Build Status Images">
 # MathSolver
 A Library to Parse and Solve Mathematical Expressions
 
